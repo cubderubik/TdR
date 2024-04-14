@@ -1,0 +1,99 @@
+\documentclass[11pt,oneside]{book}
+
+\input{tools/packages.tex}
+\input{tools/styles.tex}
+ 
+\setmainfont{arial}
+
+\setdefaultlanguage{catalan}
+
+
+\title{TDR}
+\author{Pol Sances Guirao}
+\date{September 2023}
+
+
+
+
+\begin{document}
+\frontmatter
+
+
+\begin{titlepage}
+    \centering
+    \vspace*{\fill}
+    
+    \begin{minipage}{0.4\textwidth}
+        \includegraphics[width=\textwidth]{img/logos/logo_TdR.png}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.5\textwidth}
+        \begin{center}
+            \textbf{\Huge Road to 3BLD}\\
+            \vspace{0.5cm}
+            \textbf{\LARGE Institut Lluís Companys}\\
+            \vspace{0.5cm}
+            \textbf{\Large 2n Batxillerat}\\
+            \vspace{0.5cm}
+            \textbf{\large Autor: Pol Sances Guirao}\\
+            \vspace{0.5cm}
+            \textbf{\large Tutor: Albert Riquelme}\\
+            \vspace{0.5cm}
+            \textbf{\large Departament de Tecnologia}
+        \end{center}
+    \end{minipage}
+
+    \vfill
+    \vspace*{\fill}
+    \textbf{Tordera, 15 de Desembre de 2023}
+\end{titlepage}
+
+
+
+\newpage
+\pagestyle{index}
+\tableofcontents
+
+\newpage
+\input{Sections/Abstract}
+
+\newpage
+\input{Sections/Introduction}
+
+\newpage
+\input{Sections/metodologia.tex}
+
+\mainmatter
+
+\newpage
+\input{Sections/Historia_del_cub_de_rubik}
+
+\newpage
+\input{Sections/Explicació Matemàtica.tex}
+
+\input{Sections/Teoria-cub.tex}
+
+\input{Sections/Teoria-3bld.tex}
+
+\newpage
+\input{Sections/latex.tex}
+
+\newpage
+\input{Sections/app-python.tex}
+\newpage
+
+\input{Sections/recursos-digitals.tex}
+\newpage
+
+\input{Sections/conclusions.tex}
+
+\backmatter
+\newpage
+\input{Annexos/annexos.tex}
+
+\newpage
+\addcontentsline{toc}{chapter}{Bibliografia}
+\pagestyle{plain}
+\printbibliography
+\nocite{*}
+\end{document}

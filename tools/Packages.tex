@@ -1,0 +1,52 @@
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{rubikcube,rubikrotation}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{polyglossia}
+\usepackage{geometry}
+\usepackage{lastpage}
+\usepackage{fontspec}
+\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{pdfpages}
+\usepackage{chngcntr}
+
+% Bibliografia 
+\usepackage[backend=biber, style=Apa, citestyle=numeric, sortcites=true, url=true]{biblatex}
+\DeclareFieldFormat{labelnumberwidth}{\mkbibbrackets{#1}}
+\defbibenvironment{bibliography}
+  {\list
+     {\printtext[labelnumberwidth]{%
+        \printfield{labelprefix}%
+        \printfield{labelnumber}}}
+     {\setlength{\labelwidth}{\labelnumberwidth}
+      \setlength{\leftmargin}{\labelwidth}
+      \setlength{\labelsep}{\biblabelsep}
+      \addtolength{\leftmargin}{\labelsep}
+      \setlength{\itemsep}{\bibitemsep}
+      \setlength{\parsep}{\bibparsep}}
+      \renewcommand*{\makelabel}[1]{\hss##1}}
+  {\endlist}
+  {\item}
+
+
+ 
+
+
+
+
+
+
+ 
+
+  
+
+
+
+
+
+

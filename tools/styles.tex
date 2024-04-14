@@ -1,0 +1,226 @@
+\addbibresource{Bibliografia.bib}
+
+\geometry{a4paper,hmargin=0.75in,vmargin={1.1in,0.6in},head=75pt,foot=45pt, left=2.5cm, right=2.5cm, includefoot, footskip=60pt}
+
+\pagestyle{fancy}
+
+\fancyhead[L]{\small{\leftmark}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}
+
+% Estil del lstlistings
+
+\usepackage{color}
+\definecolor{darkred}{rgb}{0.6,0.0,0.0}
+\definecolor{darkgreen}{rgb}{0,0.50,0}
+\definecolor{lightblue}{rgb}{0.0,0.42,0.91}
+\definecolor{orange}{rgb}{0.99,0.48,0.13}
+\definecolor{grass}{rgb}{0.18,0.80,0.18}
+\definecolor{pink}{rgb}{0.97,0.15,0.45}
+
+\lstset{
+  aboveskip=1em,
+  breaklines=true,
+  abovecaptionskip=-6pt,
+  captionpos=b,
+  escapeinside={\%*}{*)},
+  frame=single,
+  numbers=left,
+  numbersep=15pt,
+  numberstyle=\small,
+}
+
+\lstdefinelanguage{PythonPlus}[]{Python}{
+  morekeywords=[1]{,as,assert,nonlocal,with,yield,self,True,False,None,} % Python builtin
+  morekeywords=[2]{,__init__,__add__,__mul__,__div__,__sub__,__call__,__getitem__,__setitem__,__eq__,__ne__,__nonzero__,__rmul__,__radd__,__repr__,__str__,__get__,__truediv__,__pow__,__name__,__future__,__all__,}, % magic methods
+  morekeywords=[3]{,object,type,isinstance,copy,deepcopy,zip,enumerate,reversed,list,set,len,dict,tuple,range,xrange,append,execfile,real,imag,reduce,str,repr,}, % common functions
+  morekeywords=[4]{,Exception,NameError,IndexError,SyntaxError,TypeError,ValueError,OverflowError,ZeroDivisionError,}, % errors
+  morekeywords=[5]{,ode,fsolve,sqrt,exp,sin,cos,arctan,arctan2,arccos,pi, array,norm,solve,dot,arange,isscalar,max,sum,flatten,shape,reshape,find,any,all,abs,plot,linspace,legend,quad,polyval,polyfit,hstack,concatenate,vstack,column_stack,empty,zeros,ones,rand,vander,grid,pcolor,eig,eigs,eigvals,svd,qr,tan,det,logspace,roll,min,mean,cumsum,cumprod,diff,vectorize,lstsq,cla,eye,xlabel,ylabel,squeeze,}, % numpy / math
+}
+
+\lstdefinelanguage{PyBrIM}[]{PythonPlus}{
+  emph={d,E,a,Fc28,Fy,Fu,D,des,supplier,Material,Rectangle,PyElmt},
+}
+
+\lstdefinestyle{colorEX}{
+  basicstyle=\ttfamily,
+  backgroundcolor=\color{white},
+  commentstyle=\color{darkgreen}\slshape,
+  keywordstyle=\color{blue}\bfseries\itshape,
+  keywordstyle=[2]\color{blue}\bfseries,
+  keywordstyle=[3]\color{grass},
+  keywordstyle=[4]\color{red},
+  keywordstyle=[5]\color{orange},
+  stringstyle=\color{darkred},
+  emphstyle=\color{pink}\underbar,
+}
+
+% Estil dels links
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=black
+}
+
+% Estil del codi de latex
+
+\lstdefinestyle{latex}
+{
+  language=[LaTeX]{TeX},
+  texcsstyle=*\color{blue},
+  basicstyle=\ttfamily,
+  moretexcs={mycommand}, % user command highlight
+  frame=single,
+}
+
+
+% Estil Págines Annex 1
+
+\fancypagestyle{annex1}{
+\fancyhead[L]{\small{Annex 1 Codi de l'App}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}}
+
+
+% Estil Págines Annex 2
+
+\fancypagestyle{annex2}{
+\fancyhead[L]{\small{Annex 2 Tutorial 3BLD}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}}
+
+% Estil Págines Conclusions
+
+\fancypagestyle{conclusions}{
+\fancyhead[L]{\small{Conclusions}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}}
+
+% Estil Págines Introducció
+
+\fancypagestyle{Introducció}{
+\fancyhead[L]{\small{Introducció}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}}
+
+% Estil Págines Abstract
+
+\fancypagestyle{Abstract}{
+\fancyhead[L]{\small{Abstract}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}}
+
+% Estil Págines Abstract
+
+\fancypagestyle{Metodologia}{
+\fancyhead[L]{\small{Metodologia}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}}
+
+%Estil Pàgines índex
+\fancypagestyle{index}{
+\fancyhead[L]{\small{Índex}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}}
+
+
+%Estil Pàgines índex
+\fancypagestyle{normal}{
+\fancyhead[L]{\small{\leftmark}}
+\fancyhead[C]{}
+\fancyhead[R]{\includegraphics[width=1.33cm]{img/logos/logo_TdR.png}}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{Pàg \thepage\ / \pageref{LastPage}}
+
+\setlength{\headsep}{1cm}
+
+\renewcommand{\headrulewidth}{1pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\renewcommand{\baselinestretch}{1.5}}
+
+
+
